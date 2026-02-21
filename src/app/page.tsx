@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Building2, FileText, Shield, Clock, MessageSquare, Scale } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ContactStrip } from "@/components/ContactStrip";
@@ -116,6 +117,50 @@ export default function HomePage() {
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-white/30 text-white text-sm font-medium rounded-sm hover:bg-white/10 transition-colors duration-200"
               >
                 Our Services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Spotlight */}
+      <section className="py-20 md:py-28" aria-label="Meet the founder">
+        <div className="container-firm">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
+            <div className="md:col-span-4 lg:col-span-3">
+              <div className="relative rounded-sm overflow-hidden aspect-[3/4] bg-navy max-w-xs mx-auto md:max-w-none">
+                <Image
+                  src="/images/yash-mehrotra.jpg"
+                  alt="Yash Mehrotra, Founder & Principal Lawyer at Mehrotra Law"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 280px, 25vw"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="md:col-span-8 lg:col-span-9">
+              <SectionHeading
+                label="Principal"
+                title={FIRM.lawyer.name}
+              />
+              <p className="mt-4 text-navy font-serif text-xl font-semibold">
+                {FIRM.lawyer.title}
+              </p>
+              <p className="mt-4 text-gray-600 text-lg leading-relaxed">
+                Yash Mehrotra founded Mehrotra Law to provide the quality and depth of
+                service associated with larger firms, delivered with the attentiveness and
+                direct access that only a focused practice can offer. With experience as
+                General Counsel at BVD Group and as an associate at Bennett Jones LLP and
+                other respected firms, Yash brings a distinctive combination of Bay Street
+                private practice and in-house counsel perspective to every engagement.
+              </p>
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 mt-6 px-7 py-3.5 bg-navy text-white text-sm font-semibold rounded-sm hover:bg-navy-light transition-colors duration-200"
+              >
+                Read More
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </div>
           </div>
