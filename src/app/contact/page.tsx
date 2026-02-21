@@ -124,17 +124,23 @@ export default function ContactPage() {
               <div className="bg-gray-100 rounded-sm overflow-hidden aspect-[4/3]">
                 <iframe
                   title="Office location — 130 King Street West, Toronto"
-                  src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${FIRM.contact.address.mapQuery}`}
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-79.3870%2C43.6475%2C-79.3810%2C43.6510&layer=mapnik&marker=43.6493%2C-79.3840"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: "250px" }}
                   allowFullScreen
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <p className="text-xs text-gray-400">
-                Replace YOUR_GOOGLE_MAPS_API_KEY with your Google Maps Embed API key to display the map.
+              <p className="mt-2 text-xs text-gray-400">
+                <a
+                  href="https://www.google.com/maps/search/130+King+Street+West+Suite+1900+Toronto+ON"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate transition-colors"
+                >
+                  View on Google Maps →
+                </a>
               </p>
             </div>
 
