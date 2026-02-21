@@ -247,7 +247,7 @@ export default function HomePage() {
                 title="Depth Across Transactions"
               />
               <p className="mt-6 text-gray-600 text-lg leading-relaxed">
-                With [X]+ years advising on commercial real estate and corporate-commercial matters,
+                With nearly a decade advising on commercial real estate and corporate-commercial matters,
                 we bring a depth of experience to every engagement. Our practice has supported
                 a broad range of transactions—acquisitions, dispositions, financings, lease
                 negotiations, corporate reorganizations, and commercial agreements—for clients
